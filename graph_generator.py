@@ -5,8 +5,6 @@ import numpy as np
 
 def gen(n=10, m=2, print=False):
     np.set_printoptions(precision=2)
-    n = 10  # Number of nodes
-    m = 2   # Number of edges per new node
     G = nx.barabasi_albert_graph(n, m)
 
     # Step 2: Assign initial weight of 1 to all edges
